@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+
+<title>Admin Dashboard | DE IMAGE MAG</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Space+Mono&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+
+
+<link rel="stylesheet" href="css/globalfont.css">
+<style>
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+  max-width: 1100px;
+  margin: 110px auto 60px;
+  padding: 0 18px;
+}
+
+/* HEADER */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-title {
+  font-family: 'Unbounded';
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.dashboard-actions a {
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  border: 1px solid #e5e7eb;
+}
+
+.dashboard-actions a.primary {
+  background: #0f172a;
+  color: #fff;
+  border: none;
+}
+
+/* ================= STATS ================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.stat-title {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+/* ================= POSTS ================= */
+
+.posts-section {
+  margin-top: 20px;
+}
+
+.posts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+
+  color: #0f172a;
+
+  margin-bottom: 16px;
+}
+
+/* optional subtle underline */
+.posts-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  margin-left: 12px;
+
+  background: linear-gradient(
+    to right,
+    rgba(15,23,42,0.1),
+    transparent
+  );
+}
+
+.post-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.post-info {
+  max-width: 70%;
+}
+
+.post-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post-meta {
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.post-actions a {
+  font-size: 11px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* TAG */
+.tag {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.tag-published {
+  background: rgba(34,197,94,0.1);
+  color: #16a34a;
+}
+
+.tag-draft {
+  background: rgba(148,163,184,0.2);
+  color: #64748b;
+}
+
+
+/* ================= EXTENDED STATS ================= */
+
+/* Wrap extra stats nicely */
+.stat-extended {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+/* Bigger cards for emphasis */
+.stat-card.large {
+  padding: 18px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+/* Top post text clamp */
+#topPost {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #0f172a;
+  margin-top: 6px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ================= SECTIONS SPACING ================= */
+
+.posts-section {
+  margin-top: 40px;
+}
+
+.posts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+
+  color: #0f172a;
+
+  margin-bottom: 14px;
+}
+
+/* ================= POST ROW IMPROVEMENT ================= */
+
+.post-row {
+  transition: all 0.2s ease;
+}
+
+.post-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* tighten meta spacing */
+.post-meta {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* ================= TRENDING SPECIAL STYLE ================= */
+
+#trendingPosts .post-row {
+  border: 1px solid rgba(249,115,22,0.15);
+  background: linear-gradient(to right, #fff, rgba(249,115,22,0.04));
+}
+
+/* subtle fire glow (yes, we’re being dramatic) */
+#trendingPosts .post-row:hover {
+  box-shadow: 0 8px 24px rgba(249,115,22,0.15);
+}
+
+/* ================= ACTION BUTTON FIX ================= */
+
+.dashboard-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dashboard-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 600px) {
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .dashboard-actions {
+    width: 100%;
+  }
+
+  .dashboard-actions a {
+    flex: 1;
+    text-align: center;
+  }
+
+  .post-info {
+    max-width: 60%;
+  }
+
+}
+
+
+
+/* ================= TRENDING SECTION WRAPPER ================= */
+
+.trending-section {
+  margin-top: 50px;
+  padding: 18px;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(249,115,22,0.06),
+    rgba(249,115,22,0.02)
+  );
+
+  border: 1px solid rgba(249,115,22,0.15);
+}
+
+/* HEADER STYLE (MORE PREMIUM) */
+.trending-section .posts-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 15px;
+  font-weight: 800;
+  color: #c2410c; /* deeper orange */
+
+  margin-bottom: 16px;
+}
+
+/* ================= TRENDING ROW ================= */
+
+#trendingPosts .post-row {
+  border: none;
+  border-radius: 12px;
+
+  background: #fff;
+  margin-bottom: 10px;
+
+  padding: 12px 14px;
+
+  transition: all 0.25s ease;
+}
+
+/* HOVER = FEELS ALIVE */
+#trendingPosts .post-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(249,115,22,0.18);
+}
+
+/* TITLE STRONGER */
+#trendingPosts .post-title {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* META (VIEWS) */
+#trendingPosts .post-meta {
+  font-size: 11px;
+  color: #f97316;
+  font-weight: 600;
+}
+
+/* ================= RANK BADGE (OPTIONAL BUT SEXY) ================= */
+
+#trendingPosts .post-row::before {
+  content: "🔥";
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  .trending-section {
+    padding: 14px;
+  }
+
+  .trending-section .posts-header {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ================= SECTION DIVIDER ================= */
+
+.posts-section + .trending-section {
+  margin-top: 30px;
+  position: relative;
+}
+
+/* subtle divider line */
+.posts-section + .trending-section::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(15,23,42,0.08),
+    transparent
+  );
+}
+
+
+/* highlight top trending item */
+#trendingPosts .post-row:first-child {
+  border: 1px solid rgba(249,115,22,0.35);
+  background: linear-gradient(
+    to right,
+    rgba(249,115,22,0.08),
+    rgba(249,115,22,0.02)
+  );
+}
+
+/* add ranking numbers */
+#trendingPosts .post-row {
+  counter-increment: trend;
+  position: relative;
+  padding-left: 32px;
+}
+
+#trendingPosts {
+  counter-reset: trend;
+}
+
+#trendingPosts .post-row::before {
+  content: counter(trend) "🔥";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 11px;
+  font-weight: 800;
+  color: #f97316;
+}
+
+
+#topPost {
+  display: block;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #0f172a;
+  margin-top: 6px;
+
+  font-weight: 600;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* ================= AUTH LOADER ================= */
+
+body.locked {
+  opacity: 0;
+}
+
+body.ready {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+
+</style>
+</head>
+
+
+<body class="locked">
+
+<div id="authLoader" style="
+position:fixed;
+inset:0;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#020617;
+color:#fff;
+font-family:Unbounded;
+z-index:9999;
+">
+Checking access...
+</div>
+<!-- NAV -->
+<div id="menu-container"></div>
+
+<div class="dashboard">
+
+  <!-- HEADER -->
+  <div class="dashboard-header">
+    <h1 class="dashboard-title">Dashboard</h1>
+
+    <div class="dashboard-actions">
+      <a href="editor/index.html">✦ New Post</a>
+      <a href="../index.html" class="primary">View Site →</a>
+
+<a href="#" onclick="logout()">Logout</a>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-title">Total Posts</div>
+      <div id="totalPosts" class="stat-value">0</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-title">Published</div>
+      <div id="publishedPosts" class="stat-value">0</div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-title">Drafts</div>
+      <div id="draftPosts" class="stat-value">0</div>
+    </div>
+  </div>
+
+<div class="stat-extended">
+  <div class="stat-card large">
+    <div class="stat-title">Total Views</div>
+    <div id="totalViews" class="stat-value">0</div>
+  </div>
+
+  <div class="stat-card large">
+    <div class="stat-title">Top Post</div>
+    <div id="topPost">-</div>
+  </div>
+</div>
+
+  <!-- POSTS -->
+<!-- POSTS -->
+<div class="posts-section">
+  <div class="posts-header">Recent Posts</div>
+  <div id="postsList"></div>
+</div>
+
+<div class="posts-section trending-section">
+  <div class="posts-header">🔥 Trending</div>
+  <div id="trendingPosts"></div>
+</div>
+
+<!-- FIREBASE + AUTH GUARD -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { 
+  getFirestore, collection, getDocs 
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+import {
+  getAuth,
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDaH1xQCYeQStoRusxHtvd8jb6P9aEEKmk",
+  authDomain: "kaali-cpanel.firebaseapp.com",
+  projectId: "kaali-cpanel",
+  storageBucket: "kaali-cpanel.firebasestorage.app",
+  messagingSenderId: "429200861204",
+  appId: "1:429200861204:web:9d9f7247caf912d4925f01"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+// 🔒 YOUR UID (only you)
+const ADMIN_UID = "QAUg5YSLHdbfVlzCb7eCpdNfjaC2";
+
+// ================= AUTH GUARD =================
+onAuthStateChanged(auth, (user) => {
+
+  if (!user) {
+    window.location.href = "/login/";
+    return;
+  }
+
+  if (user.uid !== ADMIN_UID) {
+    alert("Unauthorized access.");
+    signOut(auth);
+    window.location.href = "/login/";
+    return;
+  }
+
+  // ✅ unlock UI AFTER auth passes
+document.body.classList.remove("locked");
+document.body.classList.add("ready");
+
+// remove loader AFTER unlock
+document.getElementById("authLoader")?.remove();
+
+loadDashboard();
+});
+
+// ================= LOGOUT =================
+window.logout = async function () {
+  await signOut(auth);
+  window.location.href = "/login/";
+};
+
+// ================= DASHBOARD =================
+async function loadDashboard() {
+
+  const snapshot = await getDocs(collection(db, "blogs"));
+
+  let total = 0;
+  let published = 0;
+  let drafts = 0;
+  let totalViews = 0;
+
+  let postsHTML = "";
+  let trendingHTML = "";
+
+  const posts = [];
+
+  snapshot.forEach(docSnap => {
+    const data = docSnap.data();
+
+    const post = {
+      ...data,
+      id: docSnap.id,
+      views: data.views || 0
+    };
+
+    posts.push(post);
+
+    total++;
+    totalViews += post.views;
+
+    if (data.status === "Published") published++;
+    else drafts++;
+  });
+
+  const latest = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
+  const trending = [...posts].sort((a, b) => b.views - a.views);
+
+  const topPost = trending[0];
+
+  latest.slice(0, 6).forEach(post => {
+    postsHTML += `
+      <div class="post-row">
+        <div class="post-info">
+          <div class="post-title">${post.title}</div>
+          <div class="post-meta">
+            ${post.date || ""} • ${post.category || "General"} • ${post.views} views
+          </div>
+        </div>
+
+        <div class="post-actions">
+          <span class="tag ${post.status === "Published" ? "tag-published" : "tag-draft"}">
+            ${post.status}
+          </span>
+
+          <a href="../../post.html?slug=${post.slug}">View</a>
+        </div>
+      </div>
+    `;
+  });
+
+  trending.slice(0, 5).forEach(post => {
+    trendingHTML += `
+      <div class="post-row">
+        <div class="post-info">
+          <div class="post-title">${post.title}</div>
+          <div class="post-meta">
+            🔥 ${post.views} views
+          </div>
+        </div>
+
+        <div class="post-actions">
+          <a href="../../post.html?slug=${post.slug}">Open</a>
+        </div>
+      </div>
+    `;
+  });
+
+  document.getElementById("totalPosts").innerText = total;
+  document.getElementById("publishedPosts").innerText = published;
+  document.getElementById("draftPosts").innerText = drafts;
+  document.getElementById("totalViews").innerText = totalViews;
+
+  document.getElementById("topPost").innerText = topPost ? topPost.title.substring(0, 30) + "..." : "-";
+
+  document.getElementById("postsList").innerHTML = postsHTML;
+  document.getElementById("trendingPosts").innerHTML = trendingHTML;
+}
+</script>
+<script src="component/menu.js"></script>
+</body>
+</html>
