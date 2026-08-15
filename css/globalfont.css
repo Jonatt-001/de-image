@@ -1,0 +1,9 @@
+/* GLOBAL FONT SYSTEM */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* HEADINGS (keep your brand feel) */
+h1, h2, h3, .nav-logo {
+  font-family: 'Unbounded', sans-serif;
+}
