@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- PRIMARY SEO -->
+<title>About De Image Magazine | Global News, Media & Editorial Mission</title>
+
+<meta name="description" content="Discover De Image Magazine, a global digital publication covering news, business, technology, culture and ideas through clear, accurate and purposeful journalism.">
+
+<meta name="keywords" content="about De Image Magazine, De Image Magazine, global news platform, digital magazine Nigeria, media company, journalism platform, news website, business news, technology news, culture">
+
+<!-- CANONICAL -->
+<link rel="canonical" href="https://www.deimage.com.ng/about/">
+
+<!-- ROBOTS -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="About De Image Magazine — Global News & Media Platform">
+<meta property="og:description" content="Discover the mission, editorial values and vision behind De Image Magazine.">
+<meta property="og:url" content="https://www.deimage.com.ng/about/">
+<meta property="og:site_name" content="De Image Magazine">
+<meta property="og:image" content="https://www.deimage.com.ng/assets/og-default.jpg">
+<meta property="og:image:alt" content="De Image Magazine">
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About De Image Magazine">
+<meta name="twitter:description" content="Clarity-driven journalism. Global stories that matter.">
+<meta name="twitter:image" content="https://www.deimage.com.ng/assets/og-default.jpg">
+
+<!-- BRAND -->
+<meta name="theme-color" content="#f5f2eb">
+<meta name="color-scheme" content="light">
+
+<!-- FAVICON -->
+<link rel="icon" href="https://www.deimage.com.ng/favicon.ico">
+
+<!-- PERFORMANCE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Unbounded:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- EXISTING SITE STYLES -->
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../css/globalfont.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+<style>
+
+/* =========================================================
+   DE IMAGE MAGAZINE
+   PREMIUM EDITORIAL ABOUT PAGE
+========================================================= */
+
+:root {
+  --about-bg: #f5f2eb;
+  --about-paper: #fffdf8;
+  --about-paper-2: #f0ece3;
+
+  --about-ink: #080a0e;
+  --about-ink-2: #111722;
+
+  --about-muted: #626b78;
+  --about-soft: #9299a3;
+
+  --about-border: rgba(8, 10, 14, 0.10);
+  --about-border-strong: rgba(8, 10, 14, 0.17);
+
+  --about-gold: #b98b38;
+  --about-gold-light: #e5c982;
+
+  --about-red: #9f3030;
+  --about-red-light: #d65c5c;
+
+  --about-blue: #315d88;
+
+  --about-max: 1180px;
+  --about-radius: 22px;
+
+  --about-serif: Georgia, "Times New Roman", serif;
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.about-page {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 8% 4%,
+      rgba(185, 139, 56, 0.085),
+      transparent 25rem
+    ),
+    radial-gradient(
+      circle at 92% 20%,
+      rgba(159, 48, 48, 0.055),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 50% 65%,
+      rgba(49, 93, 136, 0.035),
+      transparent 30rem
+    ),
+    var(--about-bg);
+
+  color: var(--about-ink);
+  overflow: hidden;
+}
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+  box-sizing: border-box;
+}
+
+.about-page a {
+  color: inherit;
+}
+
+/* =========================================================
+   SCROLL PROGRESS
+========================================================= */
+
+.about-scroll-progress {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--about-red),
+      var(--about-gold),
+      var(--about-gold-light)
+    );
+  box-shadow: 0 0 14px rgba(185, 139, 56, 0.35);
+  transition: width .08s linear;
+}
+
+/* =========================================================
+   BACKGROUND ORNAMENTS
+========================================================= */
+
+.about-page::before {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  width: 420px;
+  height: 420px;
+  top: 18%;
+  left: -250px;
+  border: 1px solid rgba(185, 139, 56, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: orbitFloat 12s ease-in-out infinite;
+}
+
+.about-page::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  width: 300px;
+  height: 300px;
+  right: -180px;
+  bottom: 15%;
+  border: 1px solid rgba(159, 48, 48, 0.10);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: orbitFloatReverse 15s ease-in-out infinite;
+}
+
+@keyframes orbitFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(20px, -25px, 0) rotate(7deg);
+  }
+}
+
+@keyframes orbitFloatReverse {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(-18px, 22px, 0) rotate(-8deg);
+  }
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.about-container {
+  position: relative;
+  z-index: 1;
+  width: min(calc(100% - 32px), var(--about-max));
+  margin-inline: auto;
+}
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.about-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  animation: aboutReveal .85s cubic-bezier(.2, .8, .2, 1) forwards;
+}
+
+.about-delay-1 {
+  animation-delay: .10s;
+}
+
+.about-delay-2 {
+  animation-delay: .20s;
+}
+
+.about-delay-3 {
+  animation-delay: .30s;
+}
+
+.about-delay-4 {
+  animation-delay: .40s;
+}
+
+@keyframes aboutReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+  position: relative;
+  min-height: min(760px, calc(100svh - 70px));
+  display: flex;
+  align-items: center;
+  padding: 92px 0 90px;
+}
+
+.about-hero::before {
+  content: "DE IMAGE";
+  position: absolute;
+  top: 8%;
+  right: -100px;
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(5rem, 16vw, 13rem);
+  font-weight: 900;
+  line-height: .8;
+  letter-spacing: -.08em;
+  color: rgba(8, 10, 14, .027);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  animation: heroWordFloat 9s ease-in-out infinite;
+}
+
+@keyframes heroWordFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.about-hero-inner {
+  width: 100%;
+}
+
+.about-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 24px;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--about-muted);
+}
+
+.about-kicker::before {
+  content: "";
+  width: 32px;
+  height: 2px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--about-red),
+      var(--about-gold)
+    );
+  transform-origin: left;
+  animation: kickerLine 1s .35s cubic-bezier(.2,.8,.2,1) both;
+}
+
+@keyframes kickerLine {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.about-hero h1 {
+  max-width: 1080px;
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(2.6rem, 8vw, 7.2rem);
+  font-weight: 900;
+  line-height: .98;
+  letter-spacing: -.065em;
+}
+
+.about-hero h1 span {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1.2px rgba(8, 10, 14, .42);
+  position: relative;
+}
+
+.about-hero h1 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 105px;
+  height: 5px;
+  border-radius: 99px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--about-red),
+      var(--about-gold)
+    );
+  animation: titleAccent 1s .55s cubic-bezier(.2,.8,.2,1) both;
+  transform-origin: left;
+}
+
+@keyframes titleAccent {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.about-hero-description {
+  max-width: 690px;
+  margin-top: 38px;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.8;
+  color: var(--about-muted);
+}
+
+.about-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 42px;
+  padding-top: 22px;
+  border-top: 1px solid var(--about-border);
+}
+
+.about-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #596273;
+}
+
+.about-meta-item strong {
+  color: var(--about-ink);
+}
+
+.about-meta-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--about-gold);
+  box-shadow: 0 0 0 4px rgba(185, 139, 56, .10);
+}
+
+/* =========================================================
+   MANIFESTO
+========================================================= */
+
+.about-statement {
+  padding: 0 0 110px;
+}
+
+.about-statement-box {
+  display: grid;
+  grid-template-columns: minmax(150px, .7fr) minmax(0, 2fr);
+  gap: 50px;
+  padding: 52px;
+  border-radius: var(--about-radius);
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(185, 139, 56, .17),
+      transparent 18rem
+    ),
+    linear-gradient(
+      135deg,
+      #080a0e 0%,
+      #111722 100%
+    );
+
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 30px 80px rgba(8, 10, 14, .12),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.about-statement-box::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -180px;
+  top: -180px;
+  border: 1px solid rgba(229, 201, 130, .22);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 55px rgba(229, 201, 130, .025),
+    0 0 0 110px rgba(229, 201, 130, .018);
+  animation: manifestoOrbit 14s linear infinite;
+}
+
+@keyframes manifestoOrbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-statement-box::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 42%;
+  height: 2px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--about-red),
+      var(--about-gold),
+      transparent
+    );
+}
+
+.about-statement-label {
+  position: relative;
+  z-index: 1;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.48);
+}
+
+.about-statement h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin: 0;
+  font-family: var(--about-serif);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.about-statement h2 em {
+  color: var(--about-gold-light);
+  font-style: italic;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.about-section {
+  padding: 110px 0;
+}
+
+.about-section + .about-section {
+  border-top: 1px solid var(--about-border);
+}
+
+.about-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.about-section-number {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  color: var(--about-gold);
+}
+
+.about-section-title {
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(1.7rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -.055em;
+}
+
+.about-section-intro {
+  max-width: 420px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--about-muted);
+}
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.about-card {
+  position: relative;
+  min-height: 280px;
+  padding: 30px;
+  border: 1px solid var(--about-border);
+  border-radius: var(--about-radius);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(247,243,235,.90)
+    );
+  overflow: hidden;
+
+  transition:
+    transform .4s cubic-bezier(.2,.8,.2,1),
+    border-color .4s ease,
+    box-shadow .4s ease,
+    background .4s ease;
+}
+
+.about-card:nth-child(2) {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(243,240,233,.90)
+    );
+}
+
+.about-card:nth-child(3) {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.96),
+      rgba(240,243,244,.90)
+    );
+}
+
+.about-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--about-red),
+      var(--about-gold)
+    );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .45s ease;
+}
+
+.about-card::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid rgba(185, 139, 56, .10);
+  transition: transform .5s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--about-border-strong);
+  box-shadow:
+    0 25px 65px rgba(8, 10, 14, .09);
+}
+
+.about-card:hover::before {
+  transform: scaleX(1);
+}
+
+.about-card:hover::after {
+  transform: scale(1.25);
+}
+
+.about-card-index {
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--about-soft);
+}
+
+.about-card h3 {
+  margin: 62px 0 14px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -.025em;
+}
+
+.about-card p {
+  max-width: 340px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--about-muted);
+}
+
+/* =========================================================
+   COVERAGE
+========================================================= */
+
+.about-topics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.about-topic {
+  position: relative;
+  min-height: 180px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--about-border);
+  border-radius: 16px;
+  background: var(--about-paper);
+  text-decoration: none;
+  overflow: hidden;
+
+  transition:
+    transform .35s cubic-bezier(.2,.8,.2,1),
+    background .35s ease,
+    color .35s ease,
+    box-shadow .35s ease;
+}
+
+.about-topic::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: -45px;
+  top: -45px;
+  border-radius: 50%;
+  background: rgba(185,139,56,.08);
+  transition: transform .4s ease;
+}
+
+.about-topic:nth-child(2)::before {
+  background: rgba(159,48,48,.07);
+}
+
+.about-topic:nth-child(3)::before {
+  background: rgba(49,93,136,.07);
+}
+
+.about-topic:nth-child(4)::before {
+  background: rgba(185,139,56,.09);
+}
+
+.about-topic:hover {
+  transform: translateY(-6px);
+  background: var(--about-ink);
+  color: #fff;
+  box-shadow: 0 22px 55px rgba(8,10,14,.12);
+}
+
+.about-topic:hover::before {
+  transform: scale(2.3);
+}
+
+.about-topic-number {
+  position: relative;
+  z-index: 1;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  color: var(--about-gold);
+}
+
+.about-topic h3,
+.about-topic p {
+  position: relative;
+  z-index: 1;
+}
+
+.about-topic h3 {
+  margin: 35px 0 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -.025em;
+}
+
+.about-topic p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--about-muted);
+}
+
+.about-topic:hover p {
+  color: rgba(255,255,255,.62);
+}
+
+/* =========================================================
+   MISSION / VISION
+========================================================= */
+
+.about-split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.about-panel {
+  position: relative;
+  padding: 42px;
+  min-height: 330px;
+  border-radius: var(--about-radius);
+  background: var(--about-paper);
+  border: 1px solid var(--about-border);
+  overflow: hidden;
+}
+
+.about-panel::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  right: -80px;
+  bottom: -80px;
+  border-radius: 50%;
+  border: 1px solid rgba(185,139,56,.12);
+}
+
+.about-panel.dark {
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(185,139,56,.13),
+      transparent 16rem
+    ),
+    linear-gradient(
+      135deg,
+      #080a0e,
+      #151b26
+    );
+  color: #fff;
+  box-shadow: 0 25px 70px rgba(8,10,14,.10);
+}
+
+.about-panel.dark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background:
+    linear-gradient(
+      180deg,
+      var(--about-red),
+      var(--about-gold)
+    );
+}
+
+.about-panel-label {
+  margin-bottom: 58px;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--about-gold);
+}
+
+.about-panel h3 {
+  max-width: 550px;
+  margin: 0 0 16px;
+  font-family: var(--about-serif);
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+.about-panel p {
+  max-width: 550px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--about-muted);
+}
+
+.about-panel.dark p {
+  color: rgba(255,255,255,.62);
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.about-process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--about-border);
+  border-left: 1px solid var(--about-border);
+  background: rgba(255,255,255,.32);
+}
+
+.about-process-step {
+  position: relative;
+  min-height: 230px;
+  padding: 28px;
+  border-right: 1px solid var(--about-border);
+  border-bottom: 1px solid var(--about-border);
+  transition:
+    background .3s ease,
+    transform .3s ease;
+}
+
+.about-process-step:hover {
+  background: rgba(255,255,255,.75);
+}
+
+.about-process-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 42px;
+  border-radius: 50%;
+  background:
+    linear-gradient(
+      135deg,
+      var(--about-ink),
+      #252d3a
+    );
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow:
+    0 8px 22px rgba(8,10,14,.14);
+}
+
+.about-process-step:nth-child(2) .about-process-number {
+  background: linear-gradient(135deg, #6e2020, var(--about-red));
+}
+
+.about-process-step:nth-child(3) .about-process-number {
+  background: linear-gradient(135deg, #80601f, var(--about-gold));
+}
+
+.about-process-step:nth-child(4) .about-process-number {
+  background: linear-gradient(135deg, #23476b, var(--about-blue));
+}
+
+.about-process-step h3 {
+  margin: 0 0 10px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.about-process-step p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--about-muted);
+}
+
+/* =========================================================
+   FACTS
+========================================================= */
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--about-border);
+  border-bottom: 1px solid var(--about-border);
+  background: rgba(255,255,255,.35);
+}
+
+.about-fact {
+  position: relative;
+  padding: 38px 22px;
+  text-align: center;
+  border-right: 1px solid var(--about-border);
+}
+
+.about-fact:last-child {
+  border-right: 0;
+}
+
+.about-fact strong {
+  display: block;
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.7rem);
+  font-weight: 900;
+  letter-spacing: -.05em;
+}
+
+.about-fact:nth-child(1) strong {
+  color: var(--about-red);
+}
+
+.about-fact:nth-child(2) strong {
+  color: var(--about-gold);
+}
+
+.about-fact:nth-child(3) strong {
+  color: var(--about-blue);
+}
+
+.about-fact:nth-child(4) strong {
+  color: var(--about-ink);
+}
+
+.about-fact span {
+  display: block;
+  margin-top: 9px;
+  font-family: "Space Mono", monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--about-soft);
+}
+
+/* =========================================================
+   EDITORIAL VOICE
+========================================================= */
+
+.about-voice {
+  display: grid;
+  grid-template-columns: .85fr 1.4fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-voice-intro h2 {
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(1.7rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -.055em;
+}
+
+.about-voice-intro p {
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--about-muted);
+}
+
+.about-voice-list {
+  border-top: 1px solid var(--about-border);
+}
+
+.about-voice-item {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 18px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--about-border);
+  transition: padding-left .3s ease;
+}
+
+.about-voice-item:hover {
+  padding-left: 8px;
+}
+
+.about-voice-item-number {
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  color: var(--about-gold);
+}
+
+.about-voice-item h3 {
+  margin: 0 0 7px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.about-voice-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--about-muted);
+}
+
+/* =========================================================
+   EDITORIAL BOARD CTA
+========================================================= */
+
+.about-board-cta {
+  padding: 0 0 110px;
+}
+
+.about-board-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.4fr .6fr;
+  align-items: center;
+  gap: 40px;
+  padding: 42px 46px;
+  border-radius: var(--about-radius);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(159,48,48,.075),
+      rgba(185,139,56,.10)
+    ),
+    var(--about-paper);
+
+  border: 1px solid rgba(159,48,48,.13);
+  overflow: hidden;
+}
+
+.about-board-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background:
+    linear-gradient(
+      180deg,
+      var(--about-red),
+      var(--about-gold)
+    );
+}
+
+.about-board-card::after {
+  content: "EDITORIAL";
+  position: absolute;
+  right: -20px;
+  bottom: -35px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: -.08em;
+  color: rgba(8,10,14,.035);
+  pointer-events: none;
+}
+
+.about-board-label {
+  margin-bottom: 12px;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--about-red);
+}
+
+.about-board-card h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -.055em;
+}
+
+.about-board-card p {
+  max-width: 650px;
+  margin: 16px 0 0;
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--about-muted);
+}
+
+.about-board-action {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-board-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      135deg,
+      var(--about-ink),
+      #222b39
+    );
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow:
+    0 12px 30px rgba(8,10,14,.16);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    gap .3s ease;
+}
+
+.about-board-button:hover {
+  transform: translateY(-3px);
+  gap: 18px;
+  box-shadow:
+    0 18px 40px rgba(8,10,14,.22);
+}
+
+.about-board-button span {
+  color: var(--about-gold-light);
+  font-size: 17px;
+}
+
+/* =========================================================
+   MAIN CTA
+========================================================= */
+
+.about-cta {
+  padding: 110px 0;
+}
+
+.about-cta-box {
+  position: relative;
+  padding: 70px 50px;
+  border-radius: 28px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(159,48,48,.14),
+      transparent 17rem
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(185,139,56,.16),
+      transparent 19rem
+    ),
+    linear-gradient(
+      135deg,
+      #080a0e,
+      #141b26
+    );
+
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+
+  box-shadow:
+    0 35px 90px rgba(8,10,14,.15);
+}
+
+.about-cta-box::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.about-cta-box::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: -125px;
+  bottom: -125px;
+  border-radius: 50%;
+  border: 1px solid rgba(229,201,130,.12);
+  animation: ctaOrb 10s ease-in-out infinite;
+}
+
+@keyframes ctaOrb {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(35px, -25px);
+  }
+}
+
+.about-cta-box h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Unbounded", sans-serif;
+  font-size: clamp(1.9rem, 5vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.06em;
+}
+
+.about-cta-box p {
+  position: relative;
+  z-index: 1;
+  max-width: 570px;
+  margin: 22px auto 30px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(255,255,255,.58);
+}
+
+.about-cta-link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 21px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--about-ink);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    transform .25s ease,
+    gap .25s ease,
+    box-shadow .25s ease;
+}
+
+.about-cta-link:hover {
+  transform: translateY(-3px);
+  gap: 17px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.20);
+}
+
+.about-cta-link span {
+  font-size: 16px;
+  color: var(--about-red);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.about-page footer {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+}
+
+.about-page .footer-grid {
+  border-top: 1px solid var(--about-border);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .about-topics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-fact:nth-child(2) {
+    border-right: 0;
+  }
+
+  .about-fact:nth-child(-n+2) {
+    border-bottom: 1px solid var(--about-border);
+  }
+
+  .about-voice {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-board-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-board-action {
+    justify-content: flex-start;
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .about-container {
+    width: min(calc(100% - 24px), var(--about-max));
+  }
+
+  .about-hero {
+    min-height: auto;
+    padding: 78px 0 70px;
+  }
+
+  .about-hero::before {
+    top: 12%;
+    right: -90px;
+    font-size: 6rem;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(2.45rem, 13vw, 4.8rem);
+    line-height: 1;
+  }
+
+  .about-hero h1 span::after {
+    width: 75px;
+    height: 4px;
+  }
+
+  .about-hero-description {
+    margin-top: 28px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .about-hero-meta {
+    margin-top: 30px;
+    gap: 12px 17px;
+  }
+
+  .about-statement {
+    padding-bottom: 70px;
+  }
+
+  .about-statement-box {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 24px;
+    border-radius: 20px;
+  }
+
+  .about-statement h2 {
+    font-size: clamp(1.9rem, 8vw, 3rem);
+  }
+
+  .about-section {
+    padding: 75px 0;
+  }
+
+  .about-section-header {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .about-section-intro {
+    margin-top: 18px;
+  }
+
+  .about-section-title {
+    font-size: clamp(1.65rem, 8vw, 2.5rem);
+  }
+
+  .about-card {
+    min-height: 240px;
+    padding: 25px;
+  }
+
+  .about-card h3 {
+    margin-top: 52px;
+  }
+
+  .about-topics {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+
+  .about-topic {
+    min-height: 155px;
+    padding: 18px;
+    border-radius: 13px;
+  }
+
+  .about-topic h3 {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .about-topic p {
+    font-size: 11px;
+  }
+
+  .about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .about-panel {
+    min-height: 280px;
+    padding: 28px 24px;
+    border-radius: 20px;
+  }
+
+  .about-panel-label {
+    margin-bottom: 45px;
+  }
+
+  .about-process {
+    grid-template-columns: 1fr;
+  }
+
+  .about-process-step {
+    min-height: 205px;
+  }
+
+  .about-process-number {
+    margin-bottom: 32px;
+  }
+
+  .about-facts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-fact {
+    padding: 28px 12px;
+  }
+
+  .about-fact strong {
+    font-size: 1.5rem;
+  }
+
+  .about-fact span {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+
+  .about-voice {
+    gap: 40px;
+  }
+
+  .about-voice-item {
+    grid-template-columns: 34px 1fr;
+    gap: 12px;
+  }
+
+  .about-board-cta {
+    padding-bottom: 75px;
+  }
+
+  .about-board-card {
+    padding: 30px 24px;
+    border-radius: 20px;
+  }
+
+  .about-board-card h2 {
+    font-size: clamp(1.45rem, 7vw, 2.3rem);
+  }
+
+  .about-board-action {
+    width: 100%;
+  }
+
+  .about-board-button {
+    width: 100%;
+  }
+
+  .about-cta {
+    padding: 75px 0;
+  }
+
+  .about-cta-box {
+    padding: 52px 23px;
+    border-radius: 21px;
+  }
+
+  .about-cta-box::before {
+    inset: 11px;
+    border-radius: 15px;
+  }
+
+  .about-cta-box h2 {
+    font-size: clamp(1.8rem, 9vw, 3rem);
+  }
+
+  .about-cta-box p {
+    font-size: 13px;
+  }
+
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .about-page::before,
+  .about-page::after,
+  .about-hero::before,
+  .about-statement-box::before,
+  .about-cta-box::after {
+    animation: none;
+  }
+
+  .about-card,
+  .about-topic,
+  .about-board-button,
+  .about-cta-link,
+  .about-process-step,
+  .about-voice-item {
+    transition: none;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="about-page">
+
+<!-- =====================================================
+     SCROLL PROGRESS
+===================================================== -->
+
+<div class="about-scroll-progress" id="aboutScrollProgress"></div>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<div id="menu-container"></div>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="about-hero">
+
+  <div class="about-container about-hero-inner">
+
+    <div class="about-kicker about-reveal">
+      About the publication
+    </div>
+
+    <h1 class="about-reveal about-delay-1">
+      Journalism with
+      <span>purpose.</span>
+    </h1>
+
+    <p class="about-hero-description about-reveal about-delay-2">
+      De Image Magazine is a digital publication built for people who want
+      to understand what is happening, why it matters, and what comes next.
+      We cover news, business, technology, culture and ideas with an emphasis
+      on clarity, context and responsible reporting.
+    </p>
+
+    <div class="about-hero-meta about-reveal about-delay-3">
+
+      <div class="about-meta-item">
+        <span class="about-meta-dot"></span>
+        Independent digital publication
+      </div>
+
+      <div class="about-meta-item">
+        <strong>2026</strong>
+        Established
+      </div>
+
+      <div class="about-meta-item">
+        Global perspective
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     MANIFESTO
+===================================================== -->
+
+<section class="about-statement">
+
+  <div class="about-container">
+
+    <div class="about-statement-box about-reveal">
+
+      <div class="about-statement-label">
+        Our position
+      </div>
+
+      <h2>
+        The internet does not need
+        <em>more noise.</em>
+        It needs better information.
+      </h2>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     VALUES
+===================================================== -->
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-section-header">
+
+      <div>
+
+        <span class="about-section-number">
+          01 / Principles
+        </span>
+
+        <h2 class="about-section-title">
+          What guides us.
+        </h2>
+
+      </div>
+
+      <p class="about-section-intro">
+        Our editorial approach is built around a small number of principles
+        that shape how we select, research, write and present stories.
+      </p>
+
+    </div>
+
+
+    <div class="about-values">
+
+      <article class="about-card about-reveal">
+
+        <span class="about-card-index">
+          01
+        </span>
+
+        <h3>
+          Clarity first.
+        </h3>
+
+        <p>
+          We believe readers should not have to decode a story to understand
+          it. Information should be structured, accessible and meaningful.
+        </p>
+
+      </article>
+
+
+      <article class="about-card about-reveal about-delay-1">
+
+        <span class="about-card-index">
+          02
+        </span>
+
+        <h3>
+          Accuracy matters.
+        </h3>
+
+        <p>
+          Speed is valuable, but accuracy is essential. We prioritize
+          verification, context and responsible presentation of information.
+        </p>
+
+      </article>
+
+
+      <article class="about-card about-reveal about-delay-2">
+
+        <span class="about-card-index">
+          03
+        </span>
+
+        <h3>
+          Context over noise.
+        </h3>
+
+        <p>
+          Headlines tell you what happened. Strong journalism also helps
+          explain why it happened and what it could mean.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     COVERAGE
+===================================================== -->
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-section-header">
+
+      <div>
+
+        <span class="about-section-number">
+          02 / Coverage
+        </span>
+
+        <h2 class="about-section-title">
+          What we cover.
+        </h2>
+
+      </div>
+
+      <p class="about-section-intro">
+        From major developments to emerging ideas, our coverage is designed
+        around subjects that influence people, businesses and culture.
+      </p>
+
+    </div>
+
+
+    <div class="about-topics">
+
+      <a class="about-topic about-reveal" href="#">
+
+        <span class="about-topic-number">
+          01
+        </span>
+
+        <div>
+
+          <h3>
+            Politics & Affairs
+          </h3>
+
+          <p>
+            Power, policy, institutions and global developments.
+          </p>
+
+        </div>
+
+      </a>
+
+
+      <a class="about-topic about-reveal about-delay-1" href="#">
+
+        <span class="about-topic-number">
+          02
+        </span>
+
+        <div>
+
+          <h3>
+            Business
+          </h3>
+
+          <p>
+            Markets, companies, entrepreneurship and economic change.
+          </p>
+
+        </div>
+
+      </a>
+
+
+      <a class="about-topic about-reveal about-delay-2" href="#">
+
+        <span class="about-topic-number">
+          03
+        </span>
+
+        <div>
+
+          <h3>
+            Technology
+          </h3>
+
+          <p>
+            Innovation, digital systems, AI and the future of technology.
+          </p>
+
+        </div>
+
+      </a>
+
+
+      <a class="about-topic about-reveal about-delay-3" href="#">
+
+        <span class="about-topic-number">
+          04
+        </span>
+
+        <div>
+
+          <h3>
+            Culture
+          </h3>
+
+          <p>
+            Entertainment, people, creativity, lifestyle and ideas.
+          </p>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     MISSION / VISION
+===================================================== -->
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-section-header">
+
+      <div>
+
+        <span class="about-section-number">
+          03 / Direction
+        </span>
+
+        <h2 class="about-section-title">
+          Why we exist.
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="about-split">
+
+      <article class="about-panel dark about-reveal">
+
+        <div class="about-panel-label">
+          Our mission
+        </div>
+
+        <h3>
+          Make important information easier to understand.
+        </h3>
+
+        <p>
+          De Image Magazine exists to produce useful, accessible and
+          thoughtfully presented journalism for a global digital audience.
+        </p>
+
+      </article>
+
+
+      <article class="about-panel about-reveal about-delay-1">
+
+        <div class="about-panel-label">
+          Our vision
+        </div>
+
+        <h3>
+          Become a trusted destination for meaningful stories.
+        </h3>
+
+        <p>
+          We are building a publication where readers can discover relevant
+          stories, understand complex developments and return for dependable
+          editorial coverage.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL PROCESS
+===================================================== -->
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-section-header">
+
+      <div>
+
+        <span class="about-section-number">
+          04 / Process
+        </span>
+
+        <h2 class="about-section-title">
+          How we work.
+        </h2>
+
+      </div>
+
+      <p class="about-section-intro">
+        Good journalism is a process. Our editorial workflow is designed to
+        reduce noise and improve the quality of what reaches the reader.
+      </p>
+
+    </div>
+
+
+    <div class="about-process">
+
+      <article class="about-process-step">
+
+        <div class="about-process-number">
+          01
+        </div>
+
+        <h3>
+          Discover
+        </h3>
+
+        <p>
+          We identify developments, trends and stories that deserve attention.
+        </p>
+
+      </article>
+
+
+      <article class="about-process-step">
+
+        <div class="about-process-number">
+          02
+        </div>
+
+        <h3>
+          Research
+        </h3>
+
+        <p>
+          We gather relevant information, sources and context before
+          constructing a story.
+        </p>
+
+      </article>
+
+
+      <article class="about-process-step">
+
+        <div class="about-process-number">
+          03
+        </div>
+
+        <h3>
+          Refine
+        </h3>
+
+        <p>
+          Information is structured and edited so the central story remains
+          clear without unnecessary complexity.
+        </p>
+
+      </article>
+
+
+      <article class="about-process-step">
+
+        <div class="about-process-number">
+          04
+        </div>
+
+        <h3>
+          Publish
+        </h3>
+
+        <p>
+          Stories are presented for digital readers with accuracy,
+          transparency and usability in mind.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     PUBLICATION FACTS
+===================================================== -->
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-facts">
+
+      <div class="about-fact">
+
+        <strong>
+          2026
+        </strong>
+
+        <span>
+          Founded
+        </span>
+
+      </div>
+
+
+      <div class="about-fact">
+
+        <strong>
+          Global
+        </strong>
+
+        <span>
+          Perspective
+        </span>
+
+      </div>
+
+
+      <div class="about-fact">
+
+        <strong>
+          24/7
+        </strong>
+
+        <span>
+          Digital Access
+        </span>
+
+      </div>
+
+
+      <div class="about-fact">
+
+        <strong>
+          5+
+        </strong>
+
+        <span>
+          Core Coverage Areas
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL VOICE
+===================================================== -->
+
+<section class="about-section">
+
+  <div class="about-container">
+
+    <div class="about-voice">
+
+      <div class="about-voice-intro">
+
+        <span class="about-section-number">
+          05 / Editorial voice
+        </span>
+
+        <h2>
+          Serious about information.
+        </h2>
+
+        <p>
+          Our voice is direct, modern and analytical. We aim to respect the
+          reader's time without reducing the complexity of the world around us.
+        </p>
+
+      </div>
+
+
+      <div class="about-voice-list">
+
+        <article class="about-voice-item">
+
+          <div class="about-voice-item-number">
+            01
+          </div>
+
+          <div>
+
+            <h3>
+              Independent thinking
+            </h3>
+
+            <p>
+              We seek to distinguish reporting from speculation, commentary
+              from fact and meaningful analysis from attention-driven noise.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="about-voice-item">
+
+          <div class="about-voice-item-number">
+            02
+          </div>
+
+          <div>
+
+            <h3>
+              Reader respect
+            </h3>
+
+            <p>
+              We value concise writing, useful context and straightforward
+              presentation over sensationalism.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="about-voice-item">
+
+          <div class="about-voice-item-number">
+            03
+          </div>
+
+          <div>
+
+            <h3>
+              Continuous improvement
+            </h3>
+
+            <p>
+              Digital journalism evolves continuously. We review how stories
+              are researched, written, distributed and experienced.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="about-voice-item">
+
+          <div class="about-voice-item-number">
+            04
+          </div>
+
+          <div>
+
+            <h3>
+              Accountability
+            </h3>
+
+            <p>
+              When information changes or an error is identified, responsible
+              editorial practice means correcting the record.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDITORIAL BOARD CTA
+===================================================== -->
+
+<section class="about-board-cta">
+
+  <div class="about-container">
+
+    <div class="about-board-card about-reveal">
+
+      <div>
+
+        <div class="about-board-label">
+          Meet the people behind the publication
+        </div>
+
+        <h2>
+          Explore our Editorial Board.
+        </h2>
+
+        <p>
+          Discover the editorial leadership, contributors and people
+          responsible for shaping the voice and direction of De Image Magazine.
+        </p>
+
+      </div>
+
+
+      <div class="about-board-action">
+
+        <a
+          class="about-board-button"
+          href="../editorial-board/"
+          aria-label="View the De Image Magazine Editorial Board"
+        >
+          View Editorial Board
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     MAIN CTA
+===================================================== -->
+
+<section class="about-cta">
+
+  <div class="about-container">
+
+    <div class="about-cta-box">
+
+      <h2>
+        Stay informed.
+        Stay curious.
+      </h2>
+
+      <p>
+        Follow De Image Magazine for stories, analysis and developments
+        shaping the world around us.
+      </p>
+
+      <a
+        class="about-cta-link"
+        href="/#subscribe"
+      >
+        Subscribe for updates
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div class="footer-brand">
+
+      <div
+        class="nav-logo"
+        style="font-size:1.6rem;"
+      >
+        DE IMAGE<span>★</span>MAG
+      </div>
+
+      <p>
+        Your source for global news, culture and insight.
+        We deliver stories that matter — fast, clear and reliable.
+      </p>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h4>
+        Sections
+      </h4>
+
+      <a href="/">
+        Home
+      </a>
+
+      <a href="#">
+        Politics
+      </a>
+
+      <a href="#">
+        Business
+      </a>
+
+      <a href="#">
+        Technology
+      </a>
+
+      <a href="#">
+        Entertainment
+      </a>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h4>
+        Company
+      </h4>
+
+      <a href="/about/">
+        About
+      </a>
+
+      <a href="/editorial-board/">
+        Editorial Board
+      </a>
+
+      <a href="/contact/">
+        Contact
+      </a>
+
+      <a href="/advertise/">
+        Advertise
+      </a>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h4>
+        Legal
+      </h4>
+
+      <a href="/privacy/">
+        Privacy Policy
+      </a>
+
+      <a href="/terms/">
+        Terms of Use
+      </a>
+
+      <a href="/editorial-policy/">
+        Editorial Policy
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 De Image Magazine // All rights reserved
+    </p>
+
+  </div>
+
+</footer>
+
+</div>
+
+
+<!-- =====================================================
+     MENU
+===================================================== -->
+
+<script src="../component/menu.js"></script>
+
+
+<!-- =====================================================
+     SCROLL / MOTION ENGINE
+===================================================== -->
+
+<script>
+
+(function () {
+
+  "use strict";
+
+  const progress = document.getElementById("aboutScrollProgress");
+
+  if (!progress) {
+    return;
+  }
+
+  let ticking = false;
+
+  function updateScrollProgress() {
+
+    const scrollTop =
+      window.scrollY ||
+      document.documentElement.scrollTop;
+
+    const documentHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    if (documentHeight <= 0) {
+      progress.style.width = "0%";
+      return;
+    }
+
+    const percentage =
+      Math.min(
+        100,
+        Math.max(
+          0,
+          (scrollTop / documentHeight) * 100
+        )
+      );
+
+    progress.style.width = percentage + "%";
+
+  }
+
+  function requestUpdate() {
+
+    if (!ticking) {
+
+      window.requestAnimationFrame(function () {
+
+        updateScrollProgress();
+
+        ticking = false;
+
+      });
+
+      ticking = true;
+
+    }
+
+  }
+
+  window.addEventListener(
+    "scroll",
+    requestUpdate,
+    {
+      passive: true
+    }
+  );
+
+  window.addEventListener(
+    "resize",
+    requestUpdate,
+    {
+      passive: true
+    }
+  );
+
+  updateScrollProgress();
+
+})();
+
+</script>
+
+
+<!-- =====================================================
+     STRUCTURED DATA
+===================================================== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.deimage.com.ng/#organization",
+      "name": "De Image Magazine",
+      "url": "https://www.deimage.com.ng/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.deimage.com.ng/assets/logo.png"
+      },
+      "description": "De Image Magazine is a digital publication covering news, business, technology, culture and global affairs with a focus on clarity, accuracy and editorial integrity.",
+      "foundingDate": "2026",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "knowsAbout": [
+        "News",
+        "Journalism",
+        "Business",
+        "Technology",
+        "Culture",
+        "Global Affairs"
+      ],
+      "sameAs": [
+        "https://twitter.com/",
+        "https://instagram.com/",
+        "https://facebook.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.deimage.com.ng/#website",
+      "url": "https://www.deimage.com.ng/",
+      "name": "De Image Magazine",
+      "publisher": {
+        "@id": "https://www.deimage.com.ng/#organization"
+      },
+      "description": "De Image Magazine — global news, business, technology, culture and ideas."
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.deimage.com.ng/about/#webpage",
+      "url": "https://www.deimage.com.ng/about/",
+      "name": "About De Image Magazine",
+      "description": "Learn about De Image Magazine, its editorial mission, values, coverage and approach to digital journalism.",
+      "isPartOf": {
+        "@id": "https://www.deimage.com.ng/#website"
+      },
+      "about": {
+        "@id": "https://www.deimage.com.ng/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.deimage.com.ng/#organization"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
